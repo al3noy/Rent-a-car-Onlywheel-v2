@@ -1,0 +1,269 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: aliceblue;
+}
+
+header{
+    background-attachment: scroll;
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #1E90FF;
+    background-size: cover; 
+    align-items: center ;
+    justify-content: space-between;
+}
+header img{
+    width: 100px;
+    height: 80px;
+}
+header h3{
+    margin: 10px 25px;
+    padding: 15px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.logo{
+    margin: 10px 25px;
+    display: flex;
+}
+
+.brojevi a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 25px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: #80bfff;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.brojevi a:hover{
+    border-color: lightgray;
+    background-color: lightgrey;
+    color: black;
+}
+.navbar {
+    background-attachment: scroll;
+    margin: 0 auto;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+
+.home-image video{
+    position:absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    top: 0;    
+    object-fit: fill;    
+}
+
+.home-image .home-card{
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+    width: 600px;
+    height: 150px;
+    text-align: center;
+}
+
+.home-image h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.home-card a:link,
+.home-card a:visited{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.home-card a:hover,
+.home-card a:active{
+    background-color: lightgray;
+    color: red;
+}
+.navbar .nav-menu{
+    padding: 20px;
+    margin: auto;
+    text-align: center;        
+}
+
+.navbar .nav-menu .nav-item{
+    display: inline;
+    padding: 20px;
+}
+
+.navbar a{
+    list-style-type: none;
+    text-decoration: none;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover{    
+    color: gray;    
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
+    width: 100%;
+    height: 100%;  
+   
+}
+
+.container .forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+.container .forma-icons{
+    display: block;
+    text-align: center;    
+    width: 20%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: #e6e6e6;
+}
+.container .forma-icons .icon{
+    padding: 25px;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
+.container .forma-icons .icon:hover{
+    color:#1E90FF;
+}
+.container .forma .forma-left .forma-input .input input,textarea{
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px solid #80bfff;    
+}
+.container .forma .forma-left .forma-input .input p{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.container .forma .forma-left h1{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.container .forma .forma-left .forma-input .submit-btn{
+    margin-top: 20px;
+    background-color: #1E90FF;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 7px;
+    transition: 0.3s ease;
+}
+
+.container .forma .forma-left .forma-input .submit-btn:hover{
+    background-color: blue;
+    transform: scale(1.06);
+}
+
+.container .forma-right img{
+    width: 400px;
+    height: 700px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.lokacija h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #1E90FF;    
+    position: relative;
+}
+
+footer .footer-icon img{
+    width: 260px;
+    height: 140px;
+    margin: auto 30px;      
+}
+
+footer .footer-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+}
+
+footer .footer-links ul li{
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 4px 0px;
+      
+}
+footer #h-links{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;    
+}
+footer .footer-links ul li a{  
+    text-align: center;
+    text-decoration: none;
+    color: blue;  
+}
+footer .footer-social a{
+    font-size: 30px;
+    color: black;
+    padding: 15px;
+}
+
+#dugme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
