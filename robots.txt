@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow:
+
+sitemap:https://al3noy.github.io/Rent-a-car-Onlywheel-v2/sitemap.xml
