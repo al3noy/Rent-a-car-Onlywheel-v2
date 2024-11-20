@@ -325,7 +325,7 @@ footer .footer-social img{
 
 @media only screen and (max-width: 600px) {
     header{
-        display: block;                
+        display: flex;                
         width: fit-content;
         margin: auto 0;
         height: auto;
@@ -352,17 +352,20 @@ footer .footer-social img{
         margin: 10px 0;
     }
     .home-image{
-        width: 80%;
+        width: 90%;
         height: 80%;
     }
     .home-image .navbar{
-        margin: auto 0;
+        margin: auto;
+        margin-right: 0;
+        margin-left: 40%;
     }
     .home-image .navbar .nav-menu{
+       margin-left: 0;
        display: block;     
        text-align: center;  
        align-items: center;
-       font-size: 11px;       
+       font-size: 15px;       
     }
     .home-image .navbar a{
         display: block;
@@ -373,17 +376,18 @@ footer .footer-social img{
     .home-image .home-card {
         display: block;                
         text-align: center;    
-        margin: auto 0;
+        margin: 0 auto;
     }
+    
     .home-image .home-card h1{
         display: flex;
-        margin-left: 35px;
+        margin-left: 70px;
         align-items: center;
         font-size: 20px;
-        padding: 10px;
+        padding: 8px;
     }
     .home-image video{
-        width: 77%;
+        width: 100%;
         height: 80%;
     }
     .home-image .home-card a{
@@ -393,25 +397,28 @@ footer .footer-social img{
         justify-content: center;
         align-items: center;
         width: fit-content;
-        margin-left: 65px; 
-        margin-bottom: 50px;
+        margin-left: 95px; 
+        margin-bottom: 25px;
         margin-top: auto;
         margin-right: auto;
     }
     .o-nama{
         display: block;
-        width: 70%;
+        width: 90%;
         height: fit-content;
-        margin: 100px 15px;
+        margin: 170px 20px;
     }
     .o-nama .o-nama-right img{
         width: 100%;             
     }
+    .o-nama .o-nama-left p{
+        font-size: 15px;
+    }
     .p-usluge{
         display: block;
-        width: 70%;
+        width: 90%;
         height: fit-content;
-        margin: 100px 15px;
+        margin: 100px 20px;
         padding: 10px 0;
     }
     .p-usluge .p-left img{
@@ -427,15 +434,15 @@ footer .footer-social img{
         font-size: 20px;
     }
     .p-usluge .p-right p{
-        font-size: 11px;
+        font-size: 15px;
         text-align: center;
     }
     
     .video{
         display: block;
-        width: 70%;
+        width: 90%;
         height: fit-content;
-        margin: 100px 15px;
+        margin: 100px 20px;
         padding: 10px 0;
         text-align: center;
     }
@@ -443,19 +450,23 @@ footer .footer-social img{
         width: 100%;
         height: 60%;        
     }
+    .video .video-right h3{
+        text-align: center;
+    }
+    .video .video-right p{
+        font-size: 15px;
+        text-align: center;
+    }
     footer{
         display: block;
         text-align: center;
-        width: 77%;
-    }    
+        width: auto;
+    }
     footer .footer-links{
-        display: flex ;
-        margin-left: -15px;
+        display: flex;
+        margin-left: 25px;
         text-align: center;
     }
-
-
-
     .autic{       
         width: 80%;
     }
@@ -465,7 +476,7 @@ footer .footer-social img{
             transform: translateX(0);
         }
         50%{
-            transform: translateX(45vw);
+            transform: translateX(65vw);
         }
         100%{
             transform: translateX(0vw);
