@@ -1,0 +1,52 @@
+# Omogućavanje Rewrite modula
+RewriteEngine On
+
+# 1. HTTPS Redirekcija
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# 2. Redirekcije (SEO Friendly)
+Redirect 301 /car1 https://www.example.com/cars/car1
+
+# 3. Keširanje statičkih resursa
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# 4. SEO Friendly URL-ovi (Clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+# 5. Hotlink zaštita (blokiranje krađe slika)
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https://(www\.)?example.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC]
+
+# 6. Prebacivanje na WebP ako je podržano
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.webp -f
+RewriteRule ^(.*)\.(jpg|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+
+# 7. Ograničavanje pristupa osetljivim fajlovima
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+# 8. Prilagođene stranice za greške
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+# 9. Blokiranje određenih IP adresa
+<RequireAll>
+    Require all granted
+    Require not ip 192.168.1.1
+    Require not ip 203.0.113.0/24
+</RequireAll>
