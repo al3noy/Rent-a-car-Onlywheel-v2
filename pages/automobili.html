@@ -4,36 +4,81 @@
     <link rel="stylesheet" href="../styles/styleauti.css">
     <link rel="icon" href="../images/iconH.png ">
     <script src="https://kit.fontawesome.com/70cce1d5d2.js" crossorigin="anonymous"></script>
-    <script src="../script/script.js"></script>
+    <!-- <script src="../script/script.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5DF4KELHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5DF4KELHG');
+</script>
+    <meta property="og:url"           content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Rent a car OnlyWheel" />
+  <meta property="og:description"   content="Rent a car in Novi Sad at affordable prices. 
+We offer luxurious and economical vehicles for all needs. Book today!" />
+  <meta property="og:image"         content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/bmwblue.jpg" />
+
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '2675810fa5a05026c10d3c8a0add3fd4b9e17d5e';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 </head>
 <body>
     
 <header>
     <div class="logo">
-        <img src="../images/iconH.png">
-        <h3>Rent a car OnlyWheel</h3>
+<a href="../index.html"><img src="../images/iconH.png"></a>        
+<h3>Rent a car OnlyWheel</h3>
     </div>    
     <div class="brojevi">
         <a href="#">+381 623332222</a>
         <a href="#">rentaow@gmail.com</a>
     </div>
+
+    <div class="lang-switch">
+        <img src="../images/sr.png" alt="SR" data-lang="sr">
+        <img src="../images/uk.jpg" alt="EN" data-lang="en">
+    </div>
+
 </header>
+ <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+
+<!-- Overlay -->
+<div class="menu-overlay"></div> 
+        
 <div class="home-image">
     <div class="navbar">
         <ul class="nav-menu">
-            <li class="nav-item"><a href="../index.html">Početna</a></li>
-            <li class="nav-item"><a href="../pages/usluge.html">Usluge</a></li>
-            <li class="nav-item"><a href="../pages/automobili.html">Automobili</a></li>
-            <li class="nav-item"><a href="../pages/recenzije.html">Recenzije</a></li>
-            <li class="nav-item"><a href="../pages/kontakt.html">Kontakt</a></li>            
+                <li class="nav-item"><a href="../index.html" data-i18n="home">Početna</a></li>
+                <li class="nav-item"><a href="../pages/usluge.html" data-i18n="services">Usluge</a></li>
+                <li class="nav-item"><a href="../pages/automobili.html" data-i18n="cars">Automobili</a></li>
+                <li class="nav-item"><a href="../pages/recenzije.html" data-i18n="reviews">Recenzije</a></li>
+                <li class="nav-item"><a href="../pages/kontakt.html" data-i18n="contact">Kontakt</a></li>            
         </ul>    
 </div>
 <video src="../bmwR2.mp4" loop muted autoplay></video>
     <div class="home-card">
-        <h1>Odaberi svoju omiljenu limuzinu
+        <h1 data-i18n="titlecars">Odaberi svoju omiljenu limuzinu
         </h1>
-        <a href="#usluge-kartice">Rezerviši</a>      
+        <a href="#usluge-kartice" data-i18n="titlecars_dugme">Rezerviši</a>      
     </div>
     
 </div>
@@ -42,12 +87,12 @@
     color: #1E90FF;
     text-align: center;
     font-size:25px;
-    margin:20px auto;">Izdvajamo za vas, galeriju naših automobila koji se najviše iznajmljuju!</marquee>
+    margin:20px auto;" data-i18n="marki">Izdvajamo za vas, galeriju naših automobila koji se najviše iznajmljuju!</marquee>
 
-<div class="dugme">
-    <input type="button" value="Prikaži automobile" ondblclick="prikaziAute('auto')" id="dugme">
-    <p>(Dupli klik)</p>
-</div>
+<!-- <div class="dugme">
+    <input type="button" value="Prikaži automobile" ondblclick="prikaziAute('auto')" id="dugme" data-i18n="showbutton">
+    <p data-i18n="doubleclick">(Dupli klik)</p>
+</div> -->
 
 <div class="usluge-container" id="red1"> 
     <div class="usluge-kartice" id="usluge-kartice">
@@ -55,30 +100,30 @@
             <img src="../images/golf6.jpg">
             <div class="k-info">
                 <h2>Volkswagen Golf 6 2010</h2>                
-                    <p>DIZEL</p>
-                    <p>MANUAL 5 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>25€/dan</p><br>            
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p>
+                    <p data-i18n="manual55">MANUAL 5 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d25">25€/dan</p><br>            
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>
-        <div class="kartica">
+        <div class="kartica" id="tipo">
             <img src="../images/tipo.jpg">
             <div class="k-info">
                 <h2>Fiat Tipo 2015</h2>                
-                    <p>DIZEL</p>
-                    <p>MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>20€/dan</p><br>                
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p>
+                    <p data-i18n="manual65">MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d20">20€/dan</p><br>                
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>
-        <div class="kartica">
+        <div class="kartica" id="eklasa">
             <img src="../images/mercE.jpg">
             <div class="k-info">
-                <h2>Mercedes-Benz E klasa 2013</h2>                
-                    <p>DIZEL</p>
-                    <p>MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>45€/dan</p><br>              
-                <a href="#">Vozi</a>
+                <h2>Mercedes-Benz E-class 2013</h2>                
+                    <p data-i18n="diesel">DIZEL</p>
+                    <p data-i18n="manual65">MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d45">45€/dan</p><br>              
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>   
 </div>
@@ -90,30 +135,30 @@
             <img src="../images/superb.jpg">
             <div class="k-info">
                 <h2>Škoda Superb 2014</h2>                
-                    <p>DIZEL</p> 
-                    <p>AUTOMATIK 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>30€/dan</p><br>                 
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p> 
+                    <p data-i18n="auto65">AUTOMATIK 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d30">30€/dan</p><br>                 
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>
-        <div class="kartica">
+        <div class="kartica" id="aklasa">
             <img src="../images/mercA.jpg">
             <div class="k-info">
-                <h2>Mercedes-Benz A klasa 2020</h2>                
-                    <p>BENZIN</p>
-                    <p>AUTOMATIK 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>35€/dan</p><br>                 
-                <a href="#">Vozi</a>
+                <h2>Mercedes-Benz A-class 2020</h2>                
+                    <p data-i18n="petrol">BENZIN</p>
+                    <p data-i18n="auto65">AUTOMATIK 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d30">30€/dan</p><br>                 
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>         
-        <div class="kartica">
+        <div class="kartica" id="ceed">
             <img src="../images/kiaceed.jpg">
             <div class="k-info">
                 <h2>Kia Pro_Ceed 2007 </h2>                
-                    <p>DIZEL</p>
-                    <p>MANUAL 5 BRZINA, KLIMA, 3 VRATA</p>
-                    <p>25€/dan</p><br>                 
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p>
+                    <p data-i18n="manual53">MANUAL 5 BRZINA, KLIMA, 3 VRATA</p>
+                    <p data-i18n="d25">25€/dan</p><br>                 
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>    
     </div>     
@@ -125,46 +170,46 @@
             <img src="../images/hondacrv.jpg">
             <div class="k-info">
                 <h2>Honda CR-V 2016</h2>                
-                    <p>DIZEL</p> 
-                    <p>MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>45€/dan</p><br>                  
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p> 
+                    <p data-i18n="manual65">MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d45">45€/dan</p><br>                  
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>      
-        <div class="kartica">
+        <div class="kartica" id="korsa">
             <img src="../images/corsa.jpg">
             <div class="k-info">
                 <h2>Opel Corsa 2011 </h2>                
-                    <p>BENZIN</p>
-                    <p>MANUAL 5 BRZINA, KLIMA, 3 VRATA</p>
-                    <p>35€/dan</p><br>                  
-                <a href="#">Vozi</a>
+                    <p data-i18n="petrol">BENZIN</p>
+                    <p data-i18n="manual53">MANUAL 5 BRZINA, KLIMA, 3 VRATA</p>
+                    <p data-i18n="d30">30€/dan</p><br>                  
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>  
         <div class="kartica">
             <img src="../images/sportage.jpg">
             <div class="k-info">
                 <h2>Kia Sportage 2022</h2>                
-                    <p>DIZEL</p>
-                    <p>MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
-                    <p>50€/dan</p><br>                  
-                <a href="#">Vozi</a>
+                    <p data-i18n="diesel">DIZEL</p>
+                    <p data-i18n="manual65">MANUAL 6 BRZINA, KLIMA, 5 VRATA</p>
+                    <p data-i18n="d45">45€/dan</p><br>                  
+                <a href="#" data-i18n="drive">Vozi</a>
             </div>
         </div>    
     </div>     
 </div>
 
-<div class="naslov-a">
+<!-- <div class="naslov-a">
     <h2>Pretraži ostale</h2>
-</div>
-<form method="post" id="searchForm">
+</div> -->
+<!-- <form method="post" id="searchForm">
     <div class="input">
       <input type="search" class="input-search" name="search_query" placeholder="Pretraži auto" />
       <button type="submit" class="input-button">Pretraži</button>
     </div>
-</form>
+</form> -->
 
-<table class='tabela-search' id="tabela" border="1" style="
+<!-- <table class='tabela-search' id="tabela" border="1" style="
 border-collapse: collapse;
 border: 3px  solid #1E90FF; 
 border-radius: 10px;
@@ -205,7 +250,7 @@ height:fit-content;
       }
     }
   ?>
-  </table>
+  </table> -->
 
 <div class="autic">
     <img src="../images/icon.png">
@@ -225,12 +270,15 @@ height:fit-content;
     </div>
     <div class="footer-links">
         <ul>
-            <li id="h-links">Korisni linkovi:</li>
-            <li><a href="https://www.amss.org.rs/">Auto moto savez Srbije</a></li>
-            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere">Kamere na putevima</a></li>
-            <li><a href="https://novisad.travel/">Turistička organizacija Novi Sad</a></li>
+            <li id="h-links" data-i18n="links">Korisni linkovi:</li>
+            <li><a href="https://www.amss.org.rs/" data-i18n="link1">Auto moto savez Srbije</a></li>
+            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere" data-i18n="link2">Kamere na putevima</a></li>
+            <li><a href="https://novisad.travel/" data-i18n="link3">Turistička organizacija Novi Sad</a></li>
         </ul>
     </div>    
 </footer>
+<script src="../script/script.js"></script>
+<script src="../script/hammenu.js"></script>
+<script src="../script/translations.js"></script>
 </body>
 </html>
