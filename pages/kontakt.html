@@ -6,36 +6,80 @@
     <!-- <script src="https://kit.fontawesome.com/70cce1d5d2.js" crossorigin="anonymous"></script> -->
     <script src="../script/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5DF4KELHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5DF4KELHG');
+</script>
+    <meta property="og:url"           content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Rent a car OnlyWheel" />
+  <meta property="og:description"   content="Rent a car in Novi Sad at affordable prices. 
+We offer luxurious and economical vehicles for all needs. Book today!" />
+  <meta property="og:image"         content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/bmwblue.jpg" />
+
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '2675810fa5a05026c10d3c8a0add3fd4b9e17d5e';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 </head>
 <body>
     <script src="../script/script.js"></script>
 
 <header>
     <div class="logo">
-        <img src="../images/iconH.png">
+        <a href="../index.html"><img src="../images/iconH.png"></a>
         <h3>Rent a car OnlyWheel</h3>
     </div>    
     <div class="brojevi">
         <a href="#">+381 623332222</a>
         <a href="#">rentaow@gmail.com</a>
     </div>
+     <div class="lang-switch">
+        <img src="../images/sr.png" alt="SR" data-lang="sr">
+        <img src="../images/uk.jpg" alt="EN" data-lang="en">
+    </div>
 </header>
+
+ <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+   <!-- Overlay -->
+<div class="menu-overlay"></div> 
+        
 <div class="home-image">
     <div class="navbar">
         <ul class="nav-menu">
-            <li class="nav-item"><a href="../index.html">Početna</a></li>
-            <li class="nav-item"><a href="../pages/usluge.html">Usluge</a></li>
-            <li class="nav-item"><a href="../pages/automobili.html">Automobili</a></li>
-            <li class="nav-item"><a href="../pages/recenzije.html">Recenzije</a></li>
-            <li class="nav-item"><a href="../pages/kontakt.html">Kontakt</a></li>            
-        </ul>    
-    </div>
+                <li class="nav-item"><a href="../index.html" data-i18n="home">Početna</a></li>
+                <li class="nav-item"><a href="../pages/usluge.html" data-i18n="services">Usluge</a></li>
+                <li class="nav-item"><a href="../pages/automobili.html" data-i18n="cars">Automobili</a></li>
+                <li class="nav-item"><a href="../pages/recenzije.html" data-i18n="reviews">Recenzije</a></li>
+                <li class="nav-item"><a href="../pages/kontakt.html" data-i18n="contact">Kontakt</a></li>            
+        </ul>   
+    </div> 
+
+
 
     <video src="../merc.mp4" loop muted autoplay></video>
 
     <div class="home-card">
-        <h1>Kontaktirajte nas</h1>
-        <a href="#forma">Pošalji poruku</a>      
+        <h1 data-i18n="contactus">Kontaktirajte nas</h1>
+        <a href="#forma" data-i18n="sendmess">Pošalji poruku</a>      
     </div>
 </div> 
 
@@ -46,7 +90,7 @@
             <img src="../images/locationIC.png"><p>Maksima Gorkog 25, Novi Sad</p>
         </div>
         <div class="icon">
-            <img src="../images/phoneIC.png"><p>062-333-2222</p>
+            <img src="../images/phoneIC.png"><p>+381 62-333-2222</p>
         </div>
         <div class="icon">
             <img src="../images/mailIC.png"><p>rentaow@gmail.com</p>
@@ -59,7 +103,7 @@
             <div class="forma-input">
                 <form>
                 <div class="input">
-                    <p>Ime i prezime:</p>
+                    <p data-i18n="nameforma">Ime i prezime:</p>
                     <input type="text" id="ime" name="ime">
                 </div>
 
@@ -69,7 +113,7 @@
                 </div>
 
                 <div class="input">
-                    <p>Vaša poruka:</p>
+                    <p data-i18n="messforma">Vaša poruka:</p>
                     <textarea id="poruka" name="poruka"></textarea>
                 </div>
                 
@@ -77,7 +121,7 @@
                 </form>
             </div>                               
         </div>        
-        <?php
+        <!-- <?php
           if(isset($_GET['ime'],$_GET['email'],$_GET['poruka'])){
             $ime = $_GET['ime'];
             $email = $_GET['email'];
@@ -90,7 +134,7 @@
             mysqli_query($konekcija, $upit);
             mysqli_close($konekcija);
             }
-       ?>
+       ?> -->
 
     </div>
    
@@ -100,7 +144,7 @@
 </div>
 
 <div class="lokacija">
-    <h2>Gde se nalazimo?</h2>
+    <h2 data-i18n="where">Gde se nalazimo?</h2>
     <div class="mapa">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.852436764976!2d19.846311576683252!3d45.25077664765283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b106c3666c6c1%3A0xb22de493b28bbcb1!2sMaksima%20Gorkog%2025%2C%20Novi%20Sad!5e0!3m2!1sen!2srs!4v1702685026053!5m2!1sen!2srs" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style=" display:flex; margin: auto; width: 100%; border: 1px solid transparent;"></iframe>
     </div>
@@ -121,13 +165,15 @@
     </div>
     <div class="footer-links">
         <ul>
-            <li id="h-links">Korisni linkovi:</li>
-            <li><a href="https://www.amss.org.rs/">Auto moto savez Srbije</a></li>
-            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere">Kamere na putevima</a></li>
-            <li><a href="https://novisad.travel/">Turistička organizacija Novi Sad</a></li>
+            <li id="h-links" data-i18n="links">Korisni linkovi:</li>
+            <li><a href="https://www.amss.org.rs/" data-i18n="link1">Auto moto savez Srbije</a></li>
+            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere" data-i18n="link2">Kamere na putevima</a></li>
+            <li><a href="https://novisad.travel/" data-i18n="link3">Turistička organizacija Novi Sad</a></li>
         </ul>
-    </div>    
+    </div>   
    
 </footer>
+<script src="../script/hammenu.js"></script>
+<script src="../script/translations.js"></script>
 </body>
 </html>
