@@ -63,7 +63,17 @@ Minimum na koji izdajemo vozila je 5 dana.`,
         day30: "30 dana rent",
         dayy30: "Iznajmi bilo koje vozilo na 30 dana.",
         price140: "Cene od 140€",
-
+        ourreviews:"Recenzije o nama",
+        writerev: "Napisi svoju recenziju",
+        viewrev: "Pogledaj postojece",
+        name: "Ime",
+        desc:"Opis",
+        mark:"Ocena",
+        contactus:"Kontaktirajte nas",
+        sendmess: "Pošalji poruku",
+        nameforma:"Ime i prezime:",
+        messforma:"Vaša poruka:",
+        where:"Gde se nalazimo?"
     },
     en: {
         heroTitle: "Reserve your car",
@@ -134,6 +144,17 @@ The minimum period for which we rent out vehicles is 5 days.
         day30: "30 days rent",
         dayy30: "Rent any vehicle for 30 days.",
         price140: "Prices from 140€",
+        ourreviews:"Reviews about us",
+        writerev: "Write your review",
+        viewrev: "View existing ones",
+        name: "Name",
+        desc:"Description",
+        mark:"Mark",
+        contactus:"Contact us",
+        sendmess: "Send a message",
+        nameforma:"Name and Surname",
+        messforma:"Your message",
+        where:"Where are we?"
     }
 };
 
