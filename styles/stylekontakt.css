@@ -133,7 +133,7 @@ header h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px 0px;
+    margin: auto;
     width: 100%;
     height: 100%;  
    
@@ -157,17 +157,20 @@ header h3{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     background-color: #e6e6e6;
 }
-.container .forma-icons .icon{
-    padding: 25px;
+.container .forma-icons .icon{    
+    padding: 20px;
     font-size: 20px;
     color: black;
-    transition: 0.3s ease;
-    width: 100px;
-    height: 100px;
+    transition: 0.3s ease;    
 }
 .container .forma-icons .icon:hover{
     color:#1E90FF;
 }
+.container .forma-icons .icon img{
+    width: 40px;
+    height: 25px ;    
+}
+
 .container .forma .forma-left .forma-input .input input,textarea{
     border-radius: 15px;
     padding: 10px;
@@ -213,53 +216,6 @@ header h3{
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-footer{
-    background-attachment: scroll;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-    background-color: #1E90FF;    
-    position: relative;
-}
-
-footer .footer-icon img{
-    width: 260px;
-    height: 140px;
-    margin: auto 30px;      
-}
-
-footer .footer-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;      
-}
-
-footer .footer-links ul li{
-    display: block;
-    text-align: center;
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 4px 0px;
-      
-}
-footer #h-links{
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;    
-}
-footer .footer-links ul li a{  
-    text-align: center;
-    text-decoration: none;
-    color: blue;  
-}
-footer .footer-social a{
-    font-size: 30px;
-    color: black;
-    padding: 15px;
-}
-
 #dugme{
     display: flex;
     align-items: center;
