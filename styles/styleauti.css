@@ -14,19 +14,34 @@ header{
     background-color: none;
     background-size: cover; 
     align-items: center ;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
-header img{
+header .logo img{
     width: 100px;
     height: 80px;
 }
 header h3{
     margin: 10px 7px;
     padding: 15px 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: white;
     font-size: 25px;
     text-shadow: 3px 3px black;
+}
+header .lang-switch {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header .lang-switch img {
+    width: 30px !important;
+    height: 20px !important;
+    object-fit: cover !important;
+    margin-left: 8px !important;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
 .logo{
@@ -34,9 +49,11 @@ header h3{
     display: flex;
 }
 
+.brojevi{
+    margin-left: auto;
+}
 .brojevi a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;    color: white;
     font-weight: bold;
     font-size: 12px;
     margin: 0 25px;
@@ -53,13 +70,44 @@ header h3{
     background-color: lightgrey;
     color: black;
 }
+
 .navbar {
     background-attachment: scroll;
     margin: -59px auto;
     width: 100%;
     height: fit-content;
-    
+
 }
+
+.navbar .nav-menu{
+    padding: 20px;
+    margin: auto;
+    text-align: center;  
+          
+}
+
+.navbar .nav-menu .nav-item{
+    display: inline;
+    padding: 20px;
+}
+
+.navbar a{
+    list-style-type: none;
+    text-decoration: none;
+    color:white;
+     font-family: "Lato", sans-serif;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    font-weight: bold;
+    text-shadow: 3px 2px black;
+}
+
+.navbar a:hover{    
+    color: gray;  
+    text-shadow: none;  
+}
+
 .home-image{
     /* background-attachment: scroll   ;
     background-image:url('../images/autihome.jpeg');
@@ -90,7 +138,7 @@ header h3{
 
 .home-image h1{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-size: 50px;
     text-shadow: 5px 5px black;
 }
@@ -101,7 +149,7 @@ header h3{
     background-color: white;
     text-decoration: none;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
@@ -127,7 +175,7 @@ header h3{
     list-style-type: none;
     text-decoration: none;
     color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     border: 1px solid transparent;
     transition: 0.3s ease;
     border-radius: 10px;
@@ -141,7 +189,7 @@ header h3{
 }
 
 .usluge-container{   
-    display: none;
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;    
@@ -167,7 +215,7 @@ header h3{
 }
 .usluge-container .usluge-kartice .kartica .k-info{    
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: black;
 }
 .usluge-container .usluge-kartice .kartica .k-info p{    
@@ -210,7 +258,7 @@ header h3{
 }
 
 .usluge-container2{   
-    display: none;
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;    
@@ -234,7 +282,7 @@ header h3{
 }
 .usluge-container2 .usluge-kartice2 .kartica .k-info{
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: black;
 }
 .usluge-container2 .usluge-kartice2 .kartica .k-info p{    
@@ -276,7 +324,7 @@ header h3{
 }
 
 .usluge-container3{   
-    display: none;
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;    
@@ -301,7 +349,7 @@ header h3{
 }
 .usluge-container3 .usluge-kartice3 .kartica .k-info{
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: black;
 }
 .usluge-container3 .usluge-kartice3 .kartica .k-info p{    
@@ -374,14 +422,14 @@ footer .footer-icon img{
 }
 
 footer .footer-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+     font-family: "Lato", sans-serif;      
 }
 
 footer .footer-links ul li{
     display: block;
     text-align: center;
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     padding: 4px 0px;
       
 }
@@ -415,7 +463,7 @@ footer .footer-social img{
     border: 3px solid transparent;
     font-size: 18pt;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 0.3s ease;
@@ -430,7 +478,7 @@ footer .footer-social img{
     margin: 5px;
     text-align: center;
     font-size: 13pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     
 }
 
@@ -467,14 +515,9 @@ footer .footer-social img{
     color: #1E90FF;
 }
 .naslov-a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     text-align: center;
 }
-
-
-
-
-
 
 @keyframes autic{
     0%{
@@ -494,10 +537,9 @@ footer .footer-social img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px 0px;
-    width: 100%;
-    height: 100%;  
-   
+    margin: 50px;
+    width: auto;
+    height: 100%;     
 }
 
 .container .forma{
@@ -539,12 +581,12 @@ footer .footer-social img{
 }
 .container .forma .forma-left .forma-input .input p{
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-weight: bold;
 }
 .container .forma .forma-left h1{
     font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-weight: bold;
 }
 .container .forma .forma-left .forma-input .submit-btn{
@@ -552,7 +594,7 @@ footer .footer-social img{
     background-color: #1E90FF;
     color: white;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 7px;
@@ -575,7 +617,7 @@ footer .footer-social img{
     font-weight: bold;
     font-size: 30px;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
 }
 #dugme{
     display: flex;
@@ -606,33 +648,427 @@ footer .footer-social img{
     margin: 40px auto;
     border: 2px solid black;
     background-color: #80bfff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: white;
     text-align: center;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .recenzije .rec-postojece #rec2{
     margin: 40px auto;
     border: 2px solid black;
     background-color: #80bfff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: white;
     text-align: center;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .recenzije .rec-postojece #rec3{
     margin: 40px auto;
     border: 2px solid black;
     background-color: #80bfff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     color: white;
     text-align: center;
     border-radius: 10px;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
+
+/* ===== HAMBURGER MENU ===== */
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Overlay */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: -260px;
+        width: 260px;
+        height: 100vh;
+        background: #1E90FF;
+        transition: right 0.3s ease;
+        z-index: 1002;
+        padding-top: 80px;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .navbar .nav-item {
+        display: block;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        text-shadow: none;
+    }
+
+    .menu-overlay.active {
+        display: block;
+    }
+
+    /* sakrij desktop stil */
+    .navbar {
+        margin: 0;
+    }
+
+@media (max-width: 768px) {
+
+    .home-image {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .home-image video {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+    }
+}
+@media (max-width: 768px) {
+
+    .home-image .home-card {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 35vh;
+        text-align: center;
+    }
+
+    .home-image .home-card h1 {
+        font-size: 26px;
+        margin: 0 0 15px 0;
+        text-shadow: 3px 3px black;
+        display: block;
+    }
+
+    .home-image .home-card a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+        
+.usluge-container{   
+    display: flex;
+    width: 100%;   
+}
+
+.usluge-container .usluge-kartice{
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.usluge-container .usluge-kartice .kartica{        
+    width: 370px;
+    height: 470px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s ease;
+}
+#tipo{
+    height: 455px;
+}
+#eklasa{
+    height: 480px;
+}
+#aklasa{
+    height: 420px;
+}
+#ceed{
+    height: 485px;
+}
+#korsa{
+    height: 490px;
+}
+.usluge-container .usluge-kartice .kartica img{
+    width: 370px;
+    height: auto;  
+    border-top-left-radius: 50px;  
+    border-top-right-radius: 50px;  
+}
+
+.usluge-container2{   
+    display: flex;
+    width: 100%;
+    
+}
+.usluge-container2 .usluge-kartice2{
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.usluge-container2 .usluge-kartice2 .kartica{      
+    width: 370px;
+    height: 450px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s ease;
+    padding: auto;
+}
+.usluge-container2 .usluge-kartice2 .kartica img{
+    width: 370px;
+    height: auto;  
+    border-top-left-radius: 50px;  
+    border-top-right-radius: 50px;  
+}
+
+.usluge-container3{   
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+}
+.usluge-container3 .usluge-kartice3{
+    display: block;
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+}
+.usluge-container3 .usluge-kartice3 .kartica{      
+    width: 370px;
+    height: 460px;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s ease;
+}
+.usluge-container3 .usluge-kartice3 .kartica img{
+    width: 370px;
+    height: auto;  
+    border-top-left-radius: 50px;  
+    border-top-right-radius: 50px;  
+}
+
+
+.container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    width: auto;
+    height: 100%;  
+   
+}
+
+.container .forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    margin-top: 50px;
+    
+}
+.container .forma-icons{
+    display: block;
+    text-align: center;    
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: #e6e6e6;
+    border-radius: 15px;
+}
+.container .forma-right {
+    display: none;
+}
+}
+@media (max-width: 768px) {
+
+    header {
+        position: absolute;
+         top: 0;
+    left: 0;
+    z-index: 9998;
+    }
+
+    header .logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    header h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0 0 0 8px;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    .brojevi {
+        display: none; /* sakrij telefone – previše zauzimaju mesta */
+    }
+     .o-nama{
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin: 170px 20px;
+    }
+    .o-nama .o-nama-right img{
+        width: 100%;             
+    }
+    .o-nama .o-nama-left p{
+        font-size: 15px;
+    }
+    .p-usluge{
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin: 100px 20px;
+        padding: 10px 0;
+    }
+    .p-usluge .p-left img{
+        width: 80%; 
+        height: 60%;
+    } 
+    .p-usluge .p-right #dugme{
+       text-align: center;
+       margin: auto 25%;
+    }
+    .p-usluge .p-right h2{
+        text-align: center;
+        font-size: 20px;
+    }
+    .p-usluge .p-right p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .video{
+        display: block;
+        width: 90%;
+        height: fit-content;
+        margin: 100px 20px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .video iframe{
+        width: 100%;
+        height: 60%;        
+    }
+    .video .video-right h3{
+        text-align: center;
+    }
+    .video .video-right p{
+        font-size: 15px;
+        text-align: center;
+    }
+    footer{
+        display: block;
+        text-align: center;
+        width: auto;
+        height: 247px;
+    }
+    footer .footer-links{
+        display: none;        
+    }
+    .autic{       
+        display: none;
+    }
+    
+}
+header .lang-switch img:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+
+/* ================= MOBILE LANG SWITCH ================= */
+@media (max-width: 768px) {
+
+    /* Sakrij originalno pored brojeva */
+    header .lang-switch {
+        position: absolute;
+        bottom: 20px;   /* na dnu hamburger menija */
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        order: 99;
+        margin: 0 auto;
+    }
+
+    /* Zastavice manje */
+    header .lang-switch img {
+        width: 18px;
+        height: 12px;
+        object-fit: cover;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Premesti lang-switch u hamburger vizuelno */
+    .navbar.active + .lang-switch {
+        display: flex;
+    }
+     .navbar .lang-switch {
+        display: flex;
+        justify-content: flex-start; /* ili center po želji */
+        margin: 20px 0 0 0;
+        gap: 10px;
+    }
+
+    .navbar .lang-switch img {
+        width: 22px;  /* ili 16px ako hoćeš još manje */
+        height: 15px;
+        cursor: pointer;
+    }
+}
 }
