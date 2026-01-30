@@ -24,7 +24,7 @@ header .logo img{
 header h3{
     margin: 10px 7px;
     padding: 15px 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lato", sans-serif;
     color: white;
     font-size: 25px;
     text-shadow: 3px 3px black;
@@ -54,8 +54,7 @@ header .lang-switch img {
     margin-left: auto;
 }
 .brojevi a{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;    color: white;
     font-weight: bold;
     font-size: 12px;
     margin: 0 25px;
@@ -97,8 +96,8 @@ header .lang-switch img {
     list-style-type: none;
     text-decoration: none;
     color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: 1px solid transparent;
+ font-family: "Lato", sans-serif;
+ border: 1px solid transparent;
     transition: 0.3s ease;
     border-radius: 10px;
     font-weight: bold;
@@ -140,7 +139,7 @@ header .lang-switch img {
 
 .home-image h1{
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 50px;
     text-shadow: 7px 7px black;
 }
@@ -151,7 +150,7 @@ header .lang-switch img {
     background-color: white;
     text-decoration: none;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     border-radius: 20px;
     padding: 10px;
     transition: 0.3s ease;
@@ -170,16 +169,17 @@ header .lang-switch img {
     margin:  100px auto;
     width: 65%;
     height: 500px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: 0.3s ease;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; transition: 0.3s ease;
+    border-radius: 15px;
 }
 
 .o-nama .o-nama-left{
     margin: 0 30px;
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-size: 13px;
-    color: #0073e6;    
+    color: #0073e6;  
+    font-style: normal;
 }
 
 .o-nama .o-nama-right{
@@ -197,14 +197,14 @@ header .lang-switch img {
     margin:  100px auto;
     width: 75%;
     height: 500px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    transition: 0.3s ease;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    border-radius: 15px;
+transition: 0.3s ease;
 }
 
 .p-usluge .p-right{
     margin: 0 25px;
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-size: 17px;
     color: #0073e6;    
 }
@@ -221,7 +221,7 @@ header .lang-switch img {
 .p-usluge .p-right #dugme a{
     text-decoration: none;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-weight: bold;    
 }
 
@@ -247,20 +247,20 @@ header .lang-switch img {
     margin:  100px auto;
     width: 65%;
     height: 500px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;    transition: 0.3s ease;
+    border-radius: 15px;
 }
 .video .video-left{
         margin: 0 30px;
         text-align: justify;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-family: "Lato", sans-serif;
         font-size: 13px;
         color: #0073e6;        
 }
 .video .video-right{
     margin: 0 25px;
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     font-size: 17px;
     color: #0073e6;  
 }
@@ -299,14 +299,14 @@ footer .footer-icon img{
 }
 
 footer .footer-text{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+     font-family: "Lato", sans-serif;      
 }
 
 footer .footer-links ul li{
     display: block;
     text-align: center;
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: "Lato", sans-serif;
     padding: 4px 0px;
       
 }
@@ -494,7 +494,9 @@ footer .footer-social img{
         display: block;
         width: 90%;
         height: fit-content;
-        margin: 170px 20px;
+        margin: 100px 20px;
+        padding: 20px 0;
+        border-radius: 15px;
     }
     .o-nama .o-nama-right img{
         width: 100%;             
@@ -507,7 +509,8 @@ footer .footer-social img{
         width: 90%;
         height: fit-content;
         margin: 100px 20px;
-        padding: 10px 0;
+        padding: 20px 0;
+        border-radius: 15px;
     }
     .p-usluge .p-left img{
         width: 80%; 
@@ -530,8 +533,9 @@ footer .footer-social img{
         width: 90%;
         height: fit-content;
         margin: 100px 20px;
-        padding: 10px 0;
+        padding: 20px 0;
         text-align: center;
+        border-radius: 15px;
     }
     .video iframe{
         width: 100%;
