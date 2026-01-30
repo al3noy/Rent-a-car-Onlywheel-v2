@@ -5,91 +5,134 @@
     <link rel="icon" href="../images/iconH.png ">
     <script src="https://kit.fontawesome.com/70cce1d5d2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5DF4KELHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q5DF4KELHG');
+</script>
+    <meta property="og:url"           content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Rent a car OnlyWheel" />
+  <meta property="og:description"   content="Rent a car in Novi Sad at affordable prices. 
+We offer luxurious and economical vehicles for all needs. Book today!" />
+  <meta property="og:image"         content="https://al3noy.github.io/Rent-a-car-Onlywheel-v2/bmwblue.jpg" />
+
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '2675810fa5a05026c10d3c8a0add3fd4b9e17d5e';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 </head>
 <body>
     <script src="../script/script.js"></script>
 <header>
     <div class="logo">
-        <img src="../images/iconH.png">
+        <a href="../index.html"><img src="../images/iconH.png"></a>
         <h3>Rent a car OnlyWheel</h3>
     </div>    
     <div class="brojevi">
         <a href="#">+381 623332222</a>
         <a href="#">rentaow@gmail.com</a>
     </div>
+
+    <div class="lang-switch">
+        <img src="../images/sr.png" alt="SR" data-lang="sr">
+        <img src="../images/uk.jpg" alt="EN" data-lang="en">
+    </div>
 </header>
+ <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Overlay -->
+<div class="menu-overlay"></div> 
+        
 <div class="home-image">
     <div class="navbar">
         <ul class="nav-menu">
-            <li class="nav-item"><a href="../index.html">Početna</a></li>
-            <li class="nav-item"><a href="../pages/usluge.html">Usluge</a></li>
-            <li class="nav-item"><a href="../pages/automobili.html">Automobili</a></li>
-            <li class="nav-item"><a href="../pages/recenzije.html">Recenzije</a></li>
-            <li class="nav-item"><a href="../pages/kontakt.html">Kontakt</a></li>            
+                <li class="nav-item"><a href="../index.html" data-i18n="home">Početna</a></li>
+                <li class="nav-item"><a href="../pages/usluge.html" data-i18n="services">Usluge</a></li>
+                <li class="nav-item"><a href="../pages/automobili.html" data-i18n="cars">Automobili</a></li>
+                <li class="nav-item"><a href="../pages/recenzije.html" data-i18n="reviews">Recenzije</a></li>
+                <li class="nav-item"><a href="../pages/kontakt.html" data-i18n="contact">Kontakt</a></li>            
         </ul>    
 </div>
 <video src="../mustang.mp4" loop muted autoplay></video>
     <div class="home-card">
-        <h1>Odaberi uslugu i sedi za volan
+        <h1 data-i18n="titleusluge">Odaberi uslugu i sedi za volan
         </h1>
-        <a href="#usluge-kartice">Odaberi uslugu</a>      
+        <a href="#usluge-kartice" data-i18n="chooseserv">Odaberi uslugu</a>      
     </div>
     
 </div>
-<div class="dugme">
+<!-- <div class="dugme">
     <input type="button" value="Prikaži usluge" ondblclick="prikaziAute('usluga')" id="dugme">
     <p>(Dupli klik)</p>
-</div>
-<div class="usluge-container" id="usluge1">
-    <div class="usluge-kartice" id="usluge-kartice">
+</div> -->
+<div class="usluge-container" >
+    <div class="usluge-kartice" >
         <div class="kartica">
             <img src="../images/k1.jpg">
             <div class="k-info">
-                <h2>5 dana rent</h2>
-                <p>Iznajmi bilo koje vozilo na 5 dana.</p>
-                <h3>Cene od 40€</h3><br>
-                <a href="#">Odaberi</a>
+                <h2 data-i18n="day5">5 dana rent</h2>
+                <p data-i18n="dayy5">Iznajmi bilo koje vozilo na 5 dana.</p>
+                <h3 data-i18n="price40">Cene od 40€</h3><br>
+                <a href="#" data-i18n="choose">Odaberi</a>
             </div>
         </div>
-        <div class="kartica">
+        <div class="kartica" id="kartica2">
             <img src="../images/k2.jpg">
             <div class="k-info">
-                <h2>7 dana rent</h2>
-                <p>Iznajmi bilo koje vozilo na 7 dana.</p>
-                <h3>Cene od 60€</h3><br>
-                <a href="#">Odaberi</a>
+                <h2 data-i18n="day7">7 dana rent</h2>
+                <p data-i18n="dayy7">Iznajmi bilo koje vozilo na 7 dana.</p>
+                <h3 data-i18n="price60">Cene od 60€</h3><br>
+                <a href="#" data-i18n="choose">Odaberi</a>
             </div>
         </div>
         <div class="kartica">
             <img src="../images/k3.jpg">
             <div class="k-info">
-                <h2>10 dana rent</h2>
-                <p>Iznajmi bilo koje vozilo na 10 dana.</p>
-                <h3>Cene od 80€</h3><br>
-                <a href="#">Odaberi</a>
+                <h2 data-i18n="day10">10 dana rent</h2>
+                <p data-i18n="dayy10">Iznajmi bilo koje vozilo na 10 dana.</p>
+                <h3 data-i18n="price80">Cene od 80€</h3><br>
+                <a href="#" data-i18n="choose">Odaberi</a>
             </div>
         </div>    
     </div>      
 </div>
 
-<div class="usluge-container2" id="usluge2">
+<div class="usluge-container2" >
     <div class="usluge-kartice2">
         <div class="kartica">
             <img src="../images/k4.jpg">
             <div class="k-info">
-                <h2>20 dana rent</h2>
-                <p>Iznajmi bilo koje vozilo na 20 dana.</p>
-                <h3>Cene od 100€</h3><br>
-                <a href="#">Odaberi</a>
+                <h2 data-i18n="day20">20 dana rent</h2>
+                <p data-i18n="dayy20">Iznajmi bilo koje vozilo na 20 dana.</p>
+                <h3 data-i18n="price100">Cene od 100€</h3><br>
+                <a href="#" data-i18n="choose">Odaberi</a>
             </div>
         </div>
         <div class="kartica">
             <img src="../images/k5.jpg">
             <div class="k-info">
-                <h2>30 dana rent</h2>
-                <p>Iznajmi bilo koje vozilo na 30 dana.</p>
-                <h3>Cene od 140€</h3><br>
-                <a href="#">Odaberi</a>
+                <h2 data-i18n="day30">30 dana rent</h2>
+                <p data-i18n="dayy30">Iznajmi bilo koje vozilo na 30 dana.</p>
+                <h3 data-i18n="price140">Cene od 140€</h3><br>
+                <a href="#" data-i18n="choose">Odaberi</a>
             </div>
         </div>       
     </div>     
@@ -113,13 +156,15 @@
     </div>
     <div class="footer-links">
         <ul>
-            <li id="h-links">Korisni linkovi:</li>
-            <li><a href="https://www.amss.org.rs/">Auto moto savez Srbije</a></li>
-            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere">Kamere na putevima</a></li>
-            <li><a href="https://novisad.travel/">Turistička organizacija Novi Sad</a></li>
+            <li id="h-links" data-i18n="links">Korisni linkovi:</li>
+            <li><a href="https://www.amss.org.rs/" data-i18n="link1">Auto moto savez Srbije</a></li>
+            <li><a href="https://www.amss.org.rs/na-putu/stanje-na-putu/strana/kamere" data-i18n="link2">Kamere na putevima</a></li>
+            <li><a href="https://novisad.travel/" data-i18n="link3">Turistička organizacija Novi Sad</a></li>
         </ul>
-    </div>    
+    </div>      
    
 </footer>
+<script src="../script/hammenu.js"></script>
+<script src="../script/translations.js"></script>
 </body>
 </html>
