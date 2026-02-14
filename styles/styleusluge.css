@@ -520,12 +520,12 @@ footer .footer-social img{
     
 .usluge-container{   
     display: flex;
-    width: 100%;
+    width: fit-content;
 }
 
 .usluge-container .usluge-kartice{
     display: block;
-    width: 100%;
+    width: fit-content;
     margin: 0px 0px;
     padding: 0px;
     align-items: center;
@@ -551,11 +551,11 @@ footer .footer-social img{
 
 .usluge-container2{   
     display: flex;
-    width: 100%;    
+    width: fit-content; 
 }
 .usluge-container2 .usluge-kartice2{
     display: block;
-    width: 100%;
+    width: fit-content;
 }
 .usluge-container2 .usluge-kartice2 .kartica{  
     width: 365px;
@@ -703,3 +703,4 @@ header .lang-switch img:hover {
         cursor: pointer;
     }
 }}
+
